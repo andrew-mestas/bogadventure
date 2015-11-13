@@ -1,0 +1,7 @@
+<% @Creatures.each do |c| %>
+<div class="well">
+	<h2><a href="creatures/<%=c.id%>"><%=c.name%></a><small><%=c.description%></small></h2>
+	<a class="btn btn-default success" href="creatures/<%=c.id%>/edit" role="button">Edit</a>
+	<a class="btn btn-default " href="creatures/<%=c.id%>/delete" role="button">Delete</a>
+</div>
+<%end%>
